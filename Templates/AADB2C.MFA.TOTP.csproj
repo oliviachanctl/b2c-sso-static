@@ -7,8 +7,6 @@
   <ItemGroup>
      <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="2.2" />
      <PackageReference Include="Microsoft.AspNetCore.App" />
-     <PackageReference Include="Otp.Net" Version="1.0.1" />
-     <PackageReference Include="QRCoder" Version="1.3.9" />
   </ItemGroup>
 
   <ItemGroup>
