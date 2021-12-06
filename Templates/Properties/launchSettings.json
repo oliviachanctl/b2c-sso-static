@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AADB2C.MFA.TOTP": {
+    "Templates": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

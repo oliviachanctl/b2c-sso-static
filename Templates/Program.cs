@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging.AzureAppServices;
 
-namespace AADB2C.MFA.TOTP
+namespace Templates
 {
     public class Program
     {
