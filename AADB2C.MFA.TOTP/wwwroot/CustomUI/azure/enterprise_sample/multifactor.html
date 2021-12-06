@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Lumen Portal: Multi Factor Authentication</title>
+
+<!--#include file="ssi/azure_styles.html" -->
+
+    <!--start page specific azure b2c styles-->
+    <style>
+        /* Following are generated styles via gulp. */
+        /* inject: css */
+        .buttons button:hover{background-image:none}.phonefactor_container .row .panel-default{margin:auto;height:100%;background-color:#fff;min-width:400px}.phonefactor_container .row .panel-body{margin:0 auto;max-width:400px;width:auto;padding:4.2rem 1rem}.phonefactor_container .row .panel-body img{height:70px;margin:0 auto}button#sendCode,button#verifyCode,button#verifyPhone{margin-top:2rem;width:60%;height:50px}#api #codeVerification{text-align:left;margin-top:1rem}#api .working{display:none}#codeVerification #verificationCode{border-radius:.5rem;width:100%;height:50px;border:1px solid #6a6a6a;text-indent:20px;outline:0}#codeVerification #verificationCode:focus{border:2px solid #000}#codeVerification #retryCode{cursor:pointer;color:#337ab7;text-decoration:none}#codeVerification #retryCode:hover{text-decoration:underline}#codeVerification .error.itemLevel p{color:#d30000}#api #phonefactor_initial .intro p{text-align:left}#api p{text-align:left;margin-top:1rem}#api .intro p{margin-top:20px}#api #phoneEntry.phoneEntry{margin-top:10px}#api #phoneEntry.phoneEntry .input .code{text-align:left}#api #phoneEntry .input .code #countryCode{height:50px;border-radius:.5rem;width:100%;margin-bottom:15px;padding-left:15px}#api #phoneEntry .input .code #countryCode:focus{border:2px solid #000}#api #phoneEntry .input .error.itemLevel p{color:#d30000}#api #phoneEntry.phoneEntry .input .number{text-align:left}#api #phoneEntry.phoneEntry .input .number #number{border-radius:.5rem;width:100%;height:50px;border:1px solid #6a6a6a;text-indent:20px;outline:0}#api #phoneEntry.phoneEntry .input .number #number:focus{border:2px solid #000}#api #phonefactor_initial #phoneEntry select#countryCode{height:45px;border-radius:.5rem;width:100%;margin-bottom:15px;padding-left:15px;border:1px solid #6a6a6a}#api #phoneEntry select:hover{border-color:#888}#api #phoneEntry select option{font-weight:400}#api #phoneEntry input#localNumber{border-radius:.5rem;width:100%;height:50px;border:1px solid #6a6a6a;text-indent:20px;outline:0}#api #phonefactor_initial #phoneEntry input#localNumber:focus{border:2px solid #000}.phoneNumbers .phoneNumber .displayName,.phoneNumbers .phoneNumber .type{display:none}.phoneNumbers .phoneNumber .number,.phoneNumbers .phoneNumber label[for="1"]{margin-top:10px}
+        /* endinject */
+    </style>
+    <!--end page specific azure b2c styles-->
+
+<!--#include file="ssi/head_links.html" -->
+</head>
+
+<body>
+<div class="chi" id="articleWrapper">
+  <article class="-bg--white">
+
+<!--#include file="ssi/header.html" -->
+
+  <main>
+    <div class="-d--flex -px--4 -px-md--0 -justify-content--center">
+      <div class="-pt--2 -w--100 -mw--480">
+        <h2>Welcome to Lumen.</h2>
+        <div class="chi-card -portal">
+          <div class="chi-card__header -sm">
+            <div class="chi-card__title">Multi Factor Authentication</div>
+          </div>
+          <div class="chi-card__content">
+
+            <!-- azure b2c content in chi wrapper -->
+            <div id="api"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!--#include file="ssi/footer.html" -->
+
+  </article>
+</div>
+
+    <!-- start page specific JS -->
+    <script type="text/javascript">
+      $(function () {
+          // add chi classes to azure b2c injected content
+          $('div.input > div').addClass("chi-form__item -mt--2").removeClass("code number");
+          $('label').addClass("chi-label");
+          $('input, select').addClass("chi-input -lg");
+          $('.error').addClass("-text--danger");
+          $('div.error > p').addClass("-mt--0");
+          $('.buttons button').addClass("chi-button -primary -text--uppercase -justify-content--center -lg -mt--3 -w--100").css("height", "auto");
+          // api.phonefactor does not support setting.showCancelButton
+          $('button#cancel').hide();
+      });
+    </script>
+    <!-- end page specific JS -->
+
+<!--#include file="ssi/foot_script.html" -->
+</body>
+</html>

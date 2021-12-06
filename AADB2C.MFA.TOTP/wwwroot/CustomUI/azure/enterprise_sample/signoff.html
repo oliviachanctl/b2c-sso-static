@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Lumen Portal : Sign Off</title>
+
+<!--#include file="ssi/azure_styles.html" -->
+
+<!--#include file="ssi/head_links.html" -->
+</head>
+
+<body>
+<div class="chi" id="articleWrapper">
+  <article class="-bg--white">
+
+<!--#include file="ssi/header.html" -->
+
+  <main>
+        <div class="-d--flex -px--2 -py--4 -justify-content--center">
+            <div class="-w--100 -mw--480">
+                <div class="chi-card -b--0 -bg--none">
+                    <div class="chi-card__content -text--center">
+                        <h1 id="logoutTitle" class="-m--2">Logging Out</h1>
+                        <p id="logoutText" class="-text -pb--2">Please wait...</p>
+
+                        <script>
+                            window.onload=function() {
+                                queryString = window.location.search;
+                                urlParams = new URLSearchParams(queryString);
+                                postLogoutUrl = urlParams.get('post_logout_redirect_uri');
+                                if (postLogoutUrl) {
+                                    window.location = postLogoutUrl;
+                                } else {
+                                    document.getElementById("logoutTitle").innerHTML = "Logged Out";
+                                    document.getElementById("logoutText").innerHTML = "You have successfully logged out";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </main>
+
+<!--#include file="ssi/footer.html" -->
+
+  </article>
+</div>
+
+<!--#include file="ssi/foot_script.html" -->
+
+<!-- ADVANCED OPTION! If required load multiple front channel logout uris in individual hidden iframes -->
+<!--
+TODO: adjust iframe src and number of iframe elements
+<iframe style="display:none" height="0" width="0" src=""></iframe>
+-->
+</body>
+</html>

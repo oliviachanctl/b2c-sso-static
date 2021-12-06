@@ -1,0 +1,16 @@
+	<script type="text/javascript">
+			$(function () {
+				//Adobe DTM (Dynamic Tag Manager) Bottom Initialization
+				self.adtmTimer = setInterval(function() {
+					var adtmReady = false;
+					try {
+						adtmReady = (typeof _satellite !== "undefined") ? true : false;
+					} catch (e) {}
+					//console.log("adtmReady is " + adtmReady);
+					if (adtmReady) {
+						clearInterval(self.adtmTimer);
+						_satellite.pageBottom();
+					}
+				}, 100);
+			});
+		</script>

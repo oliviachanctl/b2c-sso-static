@@ -1,0 +1,31 @@
+	<script type="text/javascript">
+			$(function () {
+				//OneLink Moxie (Translations.com) Bottom Initialization
+				if (tdcScriptID !== "undefined") {
+					self.moxieTimer = setInterval(function() {
+						var moxieReady = false;
+						try {
+							moxieReady = (typeof OneLinkMoxieJS == "object") ? true : false;
+						} catch (e) {}
+						//console.log("moxieReady is " + moxieReady);
+						if (moxieReady) {
+							clearInterval(self.moxieTimer);
+							$.getScript( "https://www.onelink-edge.com/xapis/Pretranslate/" + tdcScriptID + ".js?");
+						}
+					}, 100);
+				}
+
+				//Adobe DTM (Dynamic Tag Manager) Bottom Initialization
+				self.adtmTimer = setInterval(function() {
+					var adtmReady = false;
+					try {
+						adtmReady = (typeof _satellite !== "undefined") ? true : false;
+					} catch (e) {}
+					//console.log("adtmReady is " + adtmReady);
+					if (adtmReady) {
+						clearInterval(self.adtmTimer);
+						_satellite.pageBottom();
+					}
+				}, 100);
+			});
+		</script>

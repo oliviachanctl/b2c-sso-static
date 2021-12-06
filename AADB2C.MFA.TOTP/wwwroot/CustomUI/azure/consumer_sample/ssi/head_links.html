@@ -1,0 +1,68 @@
+	<link rel="icon" type="image/svg+xml" href="https://lib.lumen.com/chi/5.1.0/assets/themes/centurylink/images/favicon.svg">
+	<link rel="alternate icon" href="https://lib.lumen.com/chi/5.1.0/assets/themes/centurylink/images/favicon.svg">
+
+	<link rel="stylesheet" href="https://lib.lumen.com/chi/5.1.0/chi-centurylink.css" data-preload="true"/>
+
+	<style>
+		/* azure additions for chi */
+		html{font-size:16px}#articleWrapper,body,html{width:100%;height:100%}article{min-height:100%;display:flex;flex-direction:column;align-items:stretch}main{flex-grow:1}footer,header,main{flex-shrink:0}.chi .chi-footer__internal-content{max-width:950px!important}#api{width:100%}#api .intro h2{font-size:.875rem;line-height:1.25rem;font-weight:400}
+	</style>
+
+	<script src="https://lib.lumen.com/chi/5.1.0/js/chi.js"></script>
+
+	<style>
+		/* MYA styles */
+		/* TODO: these font need to come from a CORS enabled end point to work*/
+		@font-face {
+			font-family: 'MaisonNeue-Book';
+			src: url('https://eam.centurylink.com/static/css/fonts/MaisonNeue-Book.otf'); /* IE9 Compat Modes */
+		}
+		@font-face {
+			font-family: 'MaisonNeue-Bold';
+			src: url('https://eam.centurylink.com/static/css/fonts/MaisonNeue-Bold.otf'); /* IE9 Compat Modes */
+		}
+		body { font-family: 'MaisonNeue-Book';}
+		.navImagePreloader {display: none;}
+		#signIn { font-size: 1.875rem; }
+		#signIn2, #needHelp, #manageAcc { font-size: 1.375rem; }
+		#footerLinks, #feedback, #rights { font-size: 0.6875rem ; }
+
+		@media only screen and (min-width: 576px) and (max-width: 840px) {
+			.chi .chi-tabs:not(.-vertical):not(.-responsive).-lg>li:not(:first-child) { margin-left: 1rem; }
+		}
+		@media only screen and (min-width: 576px) and (max-width: 767px) {
+			.chi .chi-header__content .chi-brand > img, .chi .chi-header__content .chi-brand > svg { height: 1.5rem; }
+			.chi .chi-header__content .chi-brand { width: 7.5rem; }
+		}
+		@media only screen and (min-width: 576px) and (max-width: 615px) {
+			.chi .chi-tabs.-large>li>a, .chi .chi-tabs.-lg>li>a { font-size: .75rem; }
+		}
+		@media only screen and (max-width: 320px) {
+			#headerResidential, #headerSmallBusiness, #headerEnterprise { font-size: .70rem; }
+			#username, #password, #loginButton { width: 15.375rem;}
+		}
+		#headerResidential:hover, #headerSmallBusiness:hover, #headerEnterprise:hover {
+			border-bottom: 2px solid #48d597;
+			display: inline-block;
+			padding-bottom: 1px;
+		}
+		#modalLinks a { color: #fff; }
+		#modalLinks a:hover { color: #48d597; }
+		#modalLinks a:hover { text-decoration: none; }
+
+		/* MYA footer styles */
+		.chi-footer.-inverse #footerLinks { color: #000000; }
+		.chi-footer.-inverse #footerLinks a { color: #fff; }
+		.chi-footer.-inverse #footerLinks a:hover { color: #48d597; }
+		#footerLinks ul li { padding-left: 0!important; }
+		#footerLinks ul li:after { content: ""; padding-left: .5rem; padding-right: 0;}
+		#footerLinks ul li:last-child:after { content: ""; }
+		@media only screen and (max-width: 991px) {
+			#footerLinks { text-align: center; }
+			#footerLinks ul { display: inline; }
+			#footerLinks ul li { padding: .5rem .5rem; }
+			#footerLinks div { white-space: normal!important; }
+		}
+	</style>
+	<!-- TODO: adjust include file for "prod" vs "test" ! -->
+	<!--#include file="head_script_test.html" -->

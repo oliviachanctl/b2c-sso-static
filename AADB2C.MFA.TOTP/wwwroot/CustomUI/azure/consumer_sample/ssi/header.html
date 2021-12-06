@@ -1,0 +1,91 @@
+<!-- TODO: adjust include file for "prod" vs "test" ! -->
+<!--#include file="header_noscript_test.html" -->
+
+<header class="chi-header -inverse">
+	<div class="navImagePreloader">
+		<img src="https://lib.lumen.com/images/centurylink-logo-white.svg" alt="CenturyLink" />
+		<img src="https://lib.lumen.com/images/centurylink-logo-black.svg" alt="CenturyLink" />
+	</div>
+	<ul class="chi-tabs -d-lg--none -d--inline -my--auto -mx--auto">
+		<li>
+			<a class="-text--uppercase -text--sm -text--normal" id="headerResidential" href="https://www.centurylink.com/home/">Residential</a>
+		</li>
+		<li>
+			<a class="-text--uppercase -text--sm -text--normal" id="headerSmallBusiness" href="https://www.centurylink.com/small-business/">Small Business</a>
+		</li>
+		<li>
+			<a class="-text--uppercase -text--sm -text--normal" id="headerEnterprise" href="https://www.centurylink.com/business.html">Enterprise</a>
+		</li>
+	</ul>
+	<div class="chi-divider -colorbar"></div>
+	<div class="chi-header__content">
+		<a class="chi-brand" href="https://www.centurylink.com/home/" aria-label="CenturyLink">
+			<img src="https://lib.lumen.com/images/centurylink-logo-white.svg" alt="CenturyLink" />
+		</a>
+
+		<div class="chi-header__start">
+			<ul class="chi-tabs -d--none -d-lg--inline -lg -ml-sm--auto -mr-md--1 -mr-lg--6">
+				<li>
+					<a class="-text--xl -text--uppercase -text--normal" id="headerResidential" href="https://www.centurylink.com/home/">Residential</a>
+				</li>
+				<li>
+					<a class="-text--xl -text--uppercase -text--normal" id="headerSmallBusiness" href="https://www.centurylink.com/small-business/">Small Business</a>
+				</li>
+				<li>
+					<a class="-text--xl -text--uppercase -text--normal" id="headerEnterprise" href="https://www.centurylink.com/business.html">Enterprise</a>
+				</li>
+				<li>
+					<a class="-text--normal" id="qbp" href="https://eam.centurylink.com/eam/qbp/identify.do">Quick Bill Pay <i class="chi-icon icon-chevron-right -xs"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="chi-header__end">
+			<div class="chi-dropdown chi-dropdown__hover -d--none -d-lg--inline">
+				<ul class="chi-tabs -lg -ml-sm--auto -mr-md--1 -mr-lg--6">
+					<li>
+						<a class="-text--normal chi-dropdown__trigger" href="#"><i class="chi-icon icon-user"></i><span>  Sign In</span></a>
+						<div class="chi-dropdown__menu -d-lg--none" id="dropdown-1">
+							<a class="chi-dropdown__menu-item" href="https://eam.centurylink.com/eam/entryPoint.do">Residential</a>
+							<a class="chi-dropdown__menu-item" href="https://www.centurylink.com/business/login/#/smb">Small Business</a>
+							<a class="chi-dropdown__menu-item" href="https://www.centurylink.com/business/login/">Enterprise</a>
+							<div class="chi-divider"></div>
+							<a class="chi-dropdown__menu-item" href="https://eam.centurylink.com/eam/qbp/identify.do">Quick Bill Pay</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="-d--inline -d-lg--none">
+				<ul class="chi-tabs -ml-sm--auto -mr-md--1 -mr-lg--6 -pr--2">
+					<li>
+						<a class="-text--normal chi-modal__trigger" href="#" id="modal-trigger-1" data-target="#modal-1"><i class="chi-icon icon-user"></i></a>
+					</li>
+				</ul>
+				<div class="chi-backdrop -center -closed">
+					<div class="chi-backdrop__wrapper">
+						<section id="modal-1" class="chi-modal -bg--black -text--light -b--1 -b--light -w--75" role="dialog" aria-label="Modal description" aria-modal="true">
+							<header class="chi-modal__header -no-border">
+								<h2 class="chi-modal__title"></h2>
+								<button class="chi-button -icon -close -text--light" data-dismiss="modal" aria-label="Close">
+									<div class="chi-button__content">
+										<i class="chi-icon icon-x"></i>
+									</div>
+								</button>
+							</header>
+							<div class="chi-modal__content" id="modalLinks">
+								<ul class="-text -no-style">
+									<li><a class="-m--2" href="https://eam.centurylink.com/eam/entryPoint.do">Residential Sign In</a></li><br />
+									<li><a class="-m--2" href="https://www.centurylink.com/business/login/#/smb">Small Business Sign In</a></li><br />
+									<li><a class="-m--2" href="https://www.centurylink.com/business/login/">Enterprise Sign In</a></li>
+									<li><div class="chi-divider -bg--muted -m--2"></div></li>
+									<li><a class="-m--2 -pt--2" href="https://eam.centurylink.com/eam/qbp/identify.do">Quick Bill Pay</a></li>
+								</ul>
+
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
